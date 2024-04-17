@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin: 50px 0px 0px 50px;
+    background-color: #f8f8f4;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.name {
+    color: gold;
+    font: italic bold 3em Arial;
+    margin-bottom: 50px;
+}
+
+.heading {
+    font: 5em Arial;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.heading>p>span {
+    color: rgb(25, 0, 105);
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section {
+    width: 600px;
+    margin: 25px;
+    margin-left: 0px;
+    display: inline-block;
+}
+
+.section>img {
+    height: 150px;
+    width: 200px;
+    margin-left: 0px;
+}
+
+.section>div {
+    width: 350px;
+    float: right;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section div h2 {
+    padding: 10px 10px;
+    padding-left: 0;
+}
+
+footer {
+    clear: both;
+    text-align: right;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    color: rgb(0, 0, 91);
+}
+
+@media (min-width: 660px) and (max-width: 1300px) {
+    .section {
+        width: 100%;
+        display: flex;
+    }
+
+    .second>div,
+    .first>div {
+        display: inline-block;
+        width: fit-content;
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 660px) {
+    .section {
+        width: 100%;
+    }
+
+    .second>div,
+    .first>div {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    .first img,
+    .second img {
+        width: 500px;
+        height: auto;
+    }
+}
